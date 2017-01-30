@@ -5,6 +5,7 @@
  */
 public class p029 {
     public static void main(String[] args) {
+        long s = System.nanoTime();
         double[] arr = new double[10000];
         int count = 0;
         for (int i = 2; i <= 100; i++) {
@@ -15,6 +16,8 @@ public class p029 {
         }
         changeDup(arr);
         System.out.println(trueLength(arr));
+        long e = System.nanoTime();
+        System.out.println((e-s)/1000000000.0);
     }
 
     /**

@@ -10,6 +10,9 @@
 */
 public class p015 {
     public static void main (String[] args) {
+        long s = System.nanoTime();
         System.out.println(Library.fact(40).divide(Library.fact(20).pow(2)));
+        long e = System.nanoTime();
+        System.out.println((e-s)/1000000000.0);
     }
 }

@@ -3,7 +3,7 @@
  * Validated.
  */
 
-// Solved on paper thanks to OEIS sequence A001913 (https://oeis.org/A001913).
+// Solved on paper using OEIS sequence A001913 (https://oeis.org/A001913).
 
 public class p026 {
     public static void main (String[] args) {

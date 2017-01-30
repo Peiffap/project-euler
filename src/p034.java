@@ -5,7 +5,7 @@
  */
 public class p034 {
     public static void main (String[] args) {
-        long s = System.currentTimeMillis();
+        long s = System.nanoTime();
         int sum = 0;
         for (int i = 3; i < 2800000; i++) {
             if (digFacSum(i) == i) {
@@ -13,8 +13,8 @@ public class p034 {
             }
         }
         System.out.println(sum);
-        long e = System.currentTimeMillis();
-        System.out.println((e-s)/1000.0);
+        long e = System.nanoTime();
+        System.out.println((e-s)/1000000000.0);
     }
 
     /**

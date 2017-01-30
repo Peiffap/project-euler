@@ -17,6 +17,7 @@ public class p040 {
         return sb.toString();
     }
     public static void main (String[] args) {
+        long st = System.nanoTime();
         String s = numString(1000000);
         int d1 = Character.getNumericValue(s.charAt(0));
         int d10 = Character.getNumericValue(s.charAt(9));
@@ -26,5 +27,7 @@ public class p040 {
         int d100000 = Character.getNumericValue(s.charAt(99999));
         int d1000000 = Character.getNumericValue(s.charAt(999999));
         System.out.println(d1*d10*d100*d1000*d10000*d100000*d1000000);
+        long e = System.nanoTime();
+        System.out.println((e-st)/1000000000.0);
     }
 }

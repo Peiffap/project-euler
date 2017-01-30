@@ -19,6 +19,7 @@ public class p035 {
         return Integer.parseInt(shifted.toString());
     }
     public static void main (String[] args) {
+        long s = System.nanoTime();
         int count = 0;
         for (int i = 2; i < 1000000; i++) {
             if (Library.isPrime(i) && primeRotator(i) && noZero(i)) {
@@ -26,6 +27,8 @@ public class p035 {
             }
         }
         System.out.println(count);
+        long e = System.nanoTime();
+        System.out.println((e-s)/1000000000.0);
     }
 
     /**
