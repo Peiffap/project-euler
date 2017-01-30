@@ -61,15 +61,39 @@ public class p011 {
         long e = System.nanoTime();
         System.out.println((e-s)/1000000000.0);
     }
+
+    /**
+     * @param x the row of the starting point.
+     * @param y the column of the starting point.
+     * @return the product of the elements down the column of grid[x][y].
+     */
     public static int vertProd(int x, int y) {
         return grid[x][y]*grid[x+1][y]*grid[x+2][y]*grid[x+3][y];
     }
+
+    /**
+     * @param x the row of the starting point.
+     * @param y the column of the starting point.
+     * @return the product of the elements to the right on the row of grid[x][y].
+     */
     public static int horiProd(int x, int y) {
         return grid[x][y]*grid[x][y+1]*grid[x][y+2]*grid[x][y+3];
     }
+
+    /**
+     * @param x the row of the starting point.
+     * @param y the column of the starting point.
+     * @return the product of the elements down the right diagonal of grid[x][y].
+     */
     public static int diagProdDown(int x, int y) {
         return grid[x][y]*grid[x+1][y+1]*grid[x+2][y+2]*grid[x+3][y+3];
     }
+
+    /**
+     * @param x the row of the starting point.
+     * @param y the column of the starting point.
+     * @return the product of the elements up the right diagonal of grid[x][y].
+     */
     public static int diagProdUp(int x, int y) {
         return grid[x][y]*grid[x-1][y+1]*grid[x-2][y+2]*grid[x-3][y+3];
     }
