@@ -151,4 +151,20 @@ public class Library {
         }
         return divs;
     }
+
+    /**
+     * @param n the integer we want to sum the divisors of.
+     * @return the sum of the divisors of n.
+     */
+    public static int divisorSum (int n) {
+        int sum = 1;
+        for (int i = 2; i*i <= n; i++) {
+            if (n%i == 0 && i*i != n) {
+                sum += i + n/i;
+            } else if (n%i == 0) {
+                sum += i;
+            }
+        }
+        return sum;
+    }
 }
