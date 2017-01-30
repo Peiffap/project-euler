@@ -1,5 +1,6 @@
 /**
- * Created by admin on 27/01/17.
+ * https://projecteuler.net/problem=8
+ *
  * Validated.
  */
 public class P8 {
@@ -18,6 +19,11 @@ public class P8 {
         long e = System.nanoTime();
         System.out.println((e-st)/1000000000.0);
     }
+
+    /**
+     * @param s the string representation of a number.
+     * @return the value of the product of all the digits of s.
+     */
     public static long stringProd (String s) {
         long prod = 1;
         for (int i = 0; i < s.length(); i++) {

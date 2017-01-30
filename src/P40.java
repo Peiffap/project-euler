@@ -1,17 +1,23 @@
 /**
- * Created by admin on 20/12/16.
- * Validated on 21/12/16 at 00:03.
+ * https://projecteuler.net/problem=40
+ *
+ * Validated.
  */
 public class P40 {
-    public static String fracString(int length) {
+    /**
+     * Returns the smallest string of consecutive integers of length greater than or equal to l.
+     * @param l the minimum length of the string
+     * @return the smallest string of consecutive integers of length greater than or equal to l.
+     */
+    public static String numString(int l) {
         StringBuffer sb = new StringBuffer();
-        for (int i = 1; sb.length() < length;i++) {
+        for (int i = 1; sb.length() < l; i++) {
             sb.append(i);
         }
         return sb.toString();
     }
     public static void main (String[] args) {
-        String s = fracString(1000000);
+        String s = numString(1000000);
         int d1 = Character.getNumericValue(s.charAt(0));
         int d10 = Character.getNumericValue(s.charAt(9));
         int d100 = Character.getNumericValue(s.charAt(99));

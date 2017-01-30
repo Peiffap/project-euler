@@ -1,8 +1,14 @@
 /**
- * Created by admin on 26/12/16.
+ * https://projecteuler.net/problem=92
+ *
  * Validated.
  */
 public class P92 {
+    /**
+     * Sums the squares of the digits of n.
+     * @param n the number on which the calculation is being performed.
+     * @return the sum of the squares of the digits of n.
+     */
     public static int digPowSum (int n) {
         int sum = 0;
         String s = Integer.toString(n);
@@ -12,7 +18,13 @@ public class P92 {
         }
         return sum;
     }
-    public static boolean a89 (int n) {
+
+    /**
+     * Determines whether the chain created by continuously calculating digPowSum(n) loops to 89.
+     * @param n the number to check.
+     * @return true if it arrives at 89, false if it arrives at 1.
+     */
+    public static boolean arrives89 (int n) {
         while (n != 1 && n!= 89) {
             n = digPowSum(n);
         }
@@ -22,7 +34,7 @@ public class P92 {
         long s = System.nanoTime();
         int count = 0;
         for (int i = 1; i < 10000000; i++) {
-            if (a89(i))
+            if (arrives89(i))
                 count++;
         }
         System.out.println(count);

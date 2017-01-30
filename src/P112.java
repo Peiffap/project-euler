@@ -1,6 +1,7 @@
 /**
- * Created by admin on 25/12/16 at 17:10.
- * Validated at 17:22.
+ * https://projecteuler.net/problem=112
+ *
+ * Validated.
  */
 public class P112 {
     public static void main(String[] args) {
@@ -17,6 +18,12 @@ public class P112 {
             }
         }
     }
+
+    /**
+     * Determines whether a given number is increasing.
+     * @param n the number to check.
+     * @return true if n is increasing, false if not.
+     */
     public static boolean isInc (int n) {
         String str = Integer.toString(n);
         for (int i = 0; i < str.length() -1; i++) {
@@ -27,6 +34,12 @@ public class P112 {
         }
         return true;
     }
+
+    /**
+     * Determines whether a given number is decreasing.
+     * @param n the number to check.
+     * @return true if n is decreasing, false if not.
+     */
     public static boolean isDec (int n) {
         String str = Integer.toString(n);
         for (int i = 1; i < str.length(); i++) {
@@ -37,6 +50,12 @@ public class P112 {
         }
         return true;
     }
+
+    /**
+     * Determines whether a given number is bouncy.
+     * @param n the number to check.
+     * @return true if n is bouncy, false if not.
+     */
     public static boolean isBou (int n) {
             return !isDec(n) && !isInc(n);
     }

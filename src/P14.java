@@ -1,11 +1,16 @@
 /**
- * Created by admin on 27/01/17.
+ * https://projecteuler.net/problem=14
+ *
  * Validated.
  */
 public class P14 {
 
     private static int[] lengths = new int[1000000];
 
+    /**
+     * @param in the integer we want to find the Collatz sequence length of.
+     * @return the length of this integer's Collatz sequence.
+     */
     public static int coll (int in) {
         double n = in;
         int length = 1;
@@ -17,7 +22,7 @@ public class P14 {
             }
             length++;
             if (n < in) {
-                return length-1+lengths[(int) n]; // Smaller numbers are all filled in.
+                return length-1+lengths[(int) n]; // Smaller numbers are already in the array.
             }
         }
         return length;

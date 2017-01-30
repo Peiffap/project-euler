@@ -1,5 +1,6 @@
 /**
- * Created by admin on 27/01/17.
+ * https://projecteuler.net/problem=11
+ *
  * Validated.
  */
 public class P11 {

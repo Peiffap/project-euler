@@ -1,5 +1,6 @@
 /**
- * Created by admin on 27/01/17.
+ * https://projecteuler.net/problem=46
+ *
  * Validated.
  */
 public class P46 {
@@ -36,6 +37,10 @@ public class P46 {
             }
         }
     }
+
+    /**
+     * Fills the perfSquares array with all perfect squares up to its hardcoded length.
+     */
     public static void fill() {
         for (int i = 1; i < perfSquares.length; i++) { // Fills the perfect squares.
             perfSquares[i] = i*i;

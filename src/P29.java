@@ -1,6 +1,7 @@
 /**
- * Created by admin on 24/12/16 at 13:05.
- * Validated at 13:37.
+ * https://projecteuler.net/problem=29
+ *
+ * Validated.
  */
 public class P29 {
     public static void main(String[] args) {
@@ -15,6 +16,11 @@ public class P29 {
         changeDup(arr);
         System.out.println(trueLength(arr));
     }
+
+    /**
+     * Changes an array of doubles such as to replace every duplicate with 0.
+     * @param d the array of doubles we want to transform duplicates in.
+     */
     public static void changeDup (double[] d) {
         for (int i = 0; i < d.length; i++) {
             if (d[i] != -1) {
@@ -26,6 +32,11 @@ public class P29 {
             }
         }
     }
+
+    /**
+     * @param d the array of doubles we want to know the true length of.
+     * @return the amount on nonzero elements in d.
+     */
     public static int trueLength (double[] d) {
         int l = 0;
         for (int i = 0; i < d.length; i++) {
@@ -33,10 +44,5 @@ public class P29 {
                 l++;
         }
         return l;
-    }
-    public static void showArr(double[] d) {
-        for (int i = 0; i < d.length; i++) {
-            System.out.println(d[i]);
-        }
     }
 }

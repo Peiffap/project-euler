@@ -1,12 +1,13 @@
 /**
- * Created by admin on 27/01/17.
+ * https://projecteuler.net/problem=2
+ *
  * Validated.
  */
 public class P2 {
     public static void main(String[] args) {
         long s = System.nanoTime();
-        int dummy = 1;
-        int next = 1;
+        int dummy = 1; // F_1
+        int next = 1; // F_2
         int sum = 0;
         while (dummy+next <= 4000000) {
             dummy += next;

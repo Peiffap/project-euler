@@ -1,11 +1,17 @@
 /**
- * Created by admin on 27/01/17.
+ * https://projecteuler.net/problem=4
+ *
  * Validated.
  */
 
 import java.util.ArrayList;
 
 public class P4 {
+
+    /**
+     * @param n the integer to verify for palindromicity.
+     * @return true if n is a palindrome, false if not.
+     */
     public static boolean isPalindrome (int n) {
         String s = n + "";
         String rev = "";
@@ -14,9 +20,10 @@ public class P4 {
         }
         return rev.equals(s);
     }
+
     public static void main(String[] args) {
         long s = System.nanoTime();
-        ArrayList<Integer> prods = new ArrayList<Integer>();
+        ArrayList<Integer> prods = new ArrayList<>();
         for (int i = 1; i < 1000; i++) {
             for (int j = i; j < 1000; j++) {
                 prods.add(i*j);

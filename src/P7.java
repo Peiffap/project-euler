@@ -1,5 +1,6 @@
 /**
- * Created by admin on 27/01/17.
+ * https://projecteuler.net/problem=7
+ *
  * Validated.
  */
 public class P7 {

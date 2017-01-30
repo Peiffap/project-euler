@@ -1,6 +1,7 @@
 /**
- * Created by admin on 25/12/16 at 12:56.
- * Validated at 13:03.
+ * https://projecteuler.net/problem=30
+ *
+ * Validated.
  */
 public class P30 {
     public static void main (String[] args) {
@@ -16,6 +17,11 @@ public class P30 {
         System.out.println((e-s)/1000.0);
 
     }
+
+    /**
+     * @param n the integer whose digits we want to raise to the 5th power.
+     * @return the sum of the fifth powers of the digits of n.
+     */
     public static int digPow (int n) {
         int sum = 0;
         String s = Integer.toString(n);

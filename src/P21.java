@@ -1,8 +1,13 @@
 /**
- * Created by admin on 27/01/17.
+ * https://projecteuler.net/problem=21
+ *
  * Validated.
  */
 public class P21 {
+    /**
+     * @param n the integer we want to sum the divisors of.
+     * @return the sum of the divisors of n.
+     */
     public static int divSum (int n) {
         int sum = 1;
         for (int i = 2; i*i <= n; i++) {

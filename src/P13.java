@@ -1,14 +1,19 @@
 /**
- * Created by admin on 21/12/16.
- * Validated on 21/12/16 at 00:33.
+ * https://projecteuler.net/problem=13
+ *
+ * Validated.
  */
 public class P13 {
-    public static String[] splitter(String str) {
+    /**
+     * @param str the string we are trying to split.
+     * @param length the length of a splitted block.
+     * @return an array containing length-character long substrings of str.
+     */
+    public static String[] splitter(String str, int length) {
         String[] s = new String[100];
-        int length = 50;
         for (int i = 0; i < s.length; i++) {
-            s[i] = str.substring(0,50);
-            str = str.substring(50,str.length());
+            s[i] = str.substring(0,length);
+            str = str.substring(length ,str.length());
         }
         return s;
     }
@@ -113,7 +118,7 @@ public class P13 {
         + "72107838435069186155435662884062257473692284509516"
         + "20849603980134001723930671666823555245252804609722"
         + "53503534226472524250874054075591789781264330331690";
-        String[] spl = splitter(s);
+        String[] spl = splitter(s, 50);
         double sum = 0;
         for (int i = 0; i < spl.length; i++) {
             double d = Double.parseDouble(spl[i]);

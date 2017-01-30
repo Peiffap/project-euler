@@ -1,5 +1,6 @@
 /**
- * Created by admin on 29/12/16.
+ * https://projecteuler.net/problem=24
+ *
  * Validated.
  */
 public class P24 {
@@ -9,10 +10,16 @@ public class P24 {
         for (int i = 1; i < 1000000; i++) {
             nextPermutation(nums);
         }
-        showVect(nums);
+        Library.showVect(nums);
         long e = System.nanoTime();
         System.out.println((e-s)/1000000000.0);
     }
+
+    /**
+     * Changes the input array (which represents a number n) such as to make it represent the next permutation of n.
+     * @param array an array representation of a number.
+     * @return true if there was a next permutation of array, false if not.
+     */
     public static boolean nextPermutation(int[] array) {
         int i = array.length - 1;
         while (i > 0 && array[i - 1] >= array[i])
@@ -34,12 +41,5 @@ public class P24 {
             j--;
         }
         return true;
-    }
-    public static void showVect(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]);
-            if (i == arr.length-1)
-                System.out.println();
-        }
     }
 }

@@ -1,6 +1,7 @@
 /**
- * Created by admin on 25/12/16 at 15:25.
- * Validated at 15:49.
+ * https://projecteuler.net/problem=145
+ *
+ * Validated.
  */
 public class P145 {
     public static void main(String[] args) {
@@ -17,6 +18,12 @@ public class P145 {
         long e = System.nanoTime();
         System.out.println((e-s)/1000000000.0);
     }
+
+    /**
+     * Returns a string that has the input integer's digits in reverse order.
+     * @param n the input integer.
+     * @return the string that has the input integer's digits in reverse order.
+     */
     public static String reversedNum (int n) {
         String s = Integer.toString(n);
         StringBuffer r = new StringBuffer();
@@ -26,6 +33,12 @@ public class P145 {
         int p = Integer.parseInt(s) + Integer.parseInt(r.toString());
         return Integer.toString(p);
     }
+
+    /**
+     * Determines whether a given number has only odd digits.
+     * @param s the string representation of the number.
+     * @return true if all the digits are odd, false if not.
+     */
     public static boolean onlyOdd(String s) {
         for (int i = 0; i < s.length(); i++) {
             int d = Character.getNumericValue(s.charAt(i));

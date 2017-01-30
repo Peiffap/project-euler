@@ -1,5 +1,6 @@
 /**
- * Created by admin on 26/12/16.
+ * https://projecteuler.net/problem=216
+ *
  * Validated.
  */
 

@@ -1,5 +1,6 @@
 /**
- * Created by admin on 29/12/16.
+ * https://projecteuler.net/problem=99
+ *
  * Validated.
  */
 
@@ -17,7 +18,7 @@ public class P99 {
             b = b.pow(DATA[i][1]);
             if (b.compareTo(maxb) > 0) {
                 maxb = b;
-                maxi = i+1; // array numbered from 0 - 999, lines from 1 - 1000
+                maxi = i+1; // Array numbered from 0 - 999, lines from 1 - 1000.
             }
         }
         System.out.println(maxi);

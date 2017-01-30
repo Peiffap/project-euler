@@ -1,5 +1,6 @@
 /**
- * Created by admin on 27/12/16.
+ * https://projecteuler.net/problem=37
+ *
  * Validated.
  */
 public class P37 {
@@ -7,8 +8,8 @@ public class P37 {
         long s = System.nanoTime();
         int count = 0;
         int sum = 0;
-        for (int i = 10; i > 1; i++) {
-            if (isTrunc(i)) {
+        for (int i = 10; true; i++) {
+            if (isTruncatable(i)) {
                 count++;
                 sum += i;
                 if (count == 11) {
@@ -20,36 +21,47 @@ public class P37 {
             }
         }
     }
+
+    /**
+     * Returns an integer that is the input integer without its first digit.
+     * @param n the integer to truncate.
+     * @return the truncated integer.
+     */
     public static int truncL(int n) {
         String s = Integer.toString(n);
         String str = s.substring(1,s.length());
         return Integer.parseInt(str);
     }
+
+    /**
+     * Returns an integer that is the input integer without its last digit.
+     * @param n the integer to truncate.
+     * @return the truncated integer.
+     */
     public static int truncR(int n) {
         String s = Integer.toString(n);
         String str = s.substring(0, s.length()-1);
         return Integer.parseInt(str);
     }
-    public static boolean isTrunc(int n) {
+
+    /**
+     * Evaluates whether a given integer's left truncations and right truncations are also primes.
+     * @param n the integer to check.
+     * @return true if n is truncatable, false if not.
+     */
+    public static boolean isTruncatable(int n) {
         int dummy = n;
-        while (isPrime(n) && n > 9) {
+        while (Library.isPrime(n) && n > 9) {
             n = truncL(n);
         }
-        if (n > 9 || !isPrime(n) || n < 2)
+        if (n > 9 || !Library.isPrime(n) || n < 2)
             return false;
         n = dummy;
-        while (isPrime(n) && n > 9) {
+        while (Library.isPrime(n) && n > 9) {
             n = truncR(n);
         }
-        if (n > 9 || !isPrime(n) || n < 2)
+        if (n > 9 || !Library.isPrime(n) || n < 2)
             return false;
-        return true;
-    }
-    public static boolean isPrime(int n) {
-        for (int i = 2; i*i <= n; i++) {
-            if (n%i == 0)
-                return false;
-        }
         return true;
     }
 }
