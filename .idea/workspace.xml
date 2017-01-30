@@ -2,55 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdbf4256-c083-4756-82a2-d0fa922d6b75" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/P15.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Library.java" afterPath="$PROJECT_DIR$/src/Library.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P1.java" afterPath="$PROJECT_DIR$/src/P1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P10.java" afterPath="$PROJECT_DIR$/src/P10.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P11.java" afterPath="$PROJECT_DIR$/src/P11.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P112.java" afterPath="$PROJECT_DIR$/src/P112.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P12.java" afterPath="$PROJECT_DIR$/src/P12.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P13.java" afterPath="$PROJECT_DIR$/src/P13.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P14.java" afterPath="$PROJECT_DIR$/src/P14.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P145.java" afterPath="$PROJECT_DIR$/src/P145.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P146.java" afterPath="$PROJECT_DIR$/src/P146.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P16.java" afterPath="$PROJECT_DIR$/src/P16.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P179.java" afterPath="$PROJECT_DIR$/src/P179.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P2.java" afterPath="$PROJECT_DIR$/src/P2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P20.java" afterPath="$PROJECT_DIR$/src/P20.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P206.java" afterPath="$PROJECT_DIR$/src/P206.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P21.java" afterPath="$PROJECT_DIR$/src/P21.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P216.java" afterPath="$PROJECT_DIR$/src/P216.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P24.java" afterPath="$PROJECT_DIR$/src/P24.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P25.java" afterPath="$PROJECT_DIR$/src/P25.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P26.java" afterPath="$PROJECT_DIR$/src/P26.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P27.java" afterPath="$PROJECT_DIR$/src/P27.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P29.java" afterPath="$PROJECT_DIR$/src/P29.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P3.java" afterPath="$PROJECT_DIR$/src/P3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P30.java" afterPath="$PROJECT_DIR$/src/P30.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P34.java" afterPath="$PROJECT_DIR$/src/P34.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P35.java" afterPath="$PROJECT_DIR$/src/P35.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P36.java" afterPath="$PROJECT_DIR$/src/P36.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P37.java" afterPath="$PROJECT_DIR$/src/P37.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P4.java" afterPath="$PROJECT_DIR$/src/P4.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P40.java" afterPath="$PROJECT_DIR$/src/P40.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P41.java" afterPath="$PROJECT_DIR$/src/P41.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P46.java" afterPath="$PROJECT_DIR$/src/P46.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P48.java" afterPath="$PROJECT_DIR$/src/P48.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P5.java" afterPath="$PROJECT_DIR$/src/P5.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P53.java" afterPath="$PROJECT_DIR$/src/P53.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P55.java" afterPath="$PROJECT_DIR$/src/P55.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P56.java" afterPath="$PROJECT_DIR$/src/P56.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P6.java" afterPath="$PROJECT_DIR$/src/P6.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P63.java" afterPath="$PROJECT_DIR$/src/P63.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P69.java" afterPath="$PROJECT_DIR$/src/P69.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P7.java" afterPath="$PROJECT_DIR$/src/P7.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P8.java" afterPath="$PROJECT_DIR$/src/P8.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P80.java" afterPath="$PROJECT_DIR$/src/P80.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P9.java" afterPath="$PROJECT_DIR$/src/P9.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P92.java" afterPath="$PROJECT_DIR$/src/P92.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P97.java" afterPath="$PROJECT_DIR$/src/P97.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/P99.java" afterPath="$PROJECT_DIR$/src/P99.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,16 +61,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="P11.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/P11.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="P12.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/P12.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -161,7 +103,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Library.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Library.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Library.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="203">
@@ -169,6 +111,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -193,7 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/P23.java" />
         <option value="$PROJECT_DIR$/src/P49.java" />
         <option value="$PROJECT_DIR$/src/ProbTest.java" />
         <option value="$PROJECT_DIR$/src/P7.java" />
@@ -244,6 +195,7 @@
         <option value="$PROJECT_DIR$/src/P179.java" />
         <option value="$PROJECT_DIR$/src/P206.java" />
         <option value="$PROJECT_DIR$/src/Library.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -673,13 +625,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/P49.java" />
     <entry file="file://$PROJECT_DIR$/src/ProbTest.java" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/P14.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -1087,6 +1032,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
