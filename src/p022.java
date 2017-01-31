@@ -11,24 +11,11 @@ public class p022 {
         Arrays.sort(names);
         int sum = 0;
         for (int i = 0; i < names.length; i++) {
-            sum += wordValue(names[i]) * (i+1);
+            sum += Library.wordValue(names[i]) * (i+1);
         }
         System.out.println(sum);
         long e = System.nanoTime();
         System.out.println((e-s)/1000000000.0);
-    }
-
-    /**
-     * Computes the sum of the letter values of s.
-     * @param s the string we want to know the value of.
-     * @return the sum of the letter values of a given string.
-     */
-    public static int wordValue(String s) {
-        int sum = 0;
-        for (int i = 0; i < s.length(); i++) {
-            sum += s.charAt(i) - 'A' + 1;
-        }
-        return sum;
     }
 
     private static final String[] names = {

@@ -167,4 +167,17 @@ public class Library {
         }
         return sum;
     }
+
+    /**
+     * Computes the sum of the letter values of s.
+     * @param s the string we want to know the value of.
+     * @return the sum of the letter values of a given string.
+     */
+    public static int wordValue(String s) {
+        int sum = 0;
+        for (int i = 0; i < s.length(); i++) {
+            sum += s.charAt(i) - 'A' + 1;
+        }
+        return sum;
+    }
 }
