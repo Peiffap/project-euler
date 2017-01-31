@@ -12,7 +12,7 @@ public class p123 {
         int[] primes = new int[25000];
         int index = 1;
         int lowestIndexBelow10B = 0; // Efficiency.
-        boolean given = false; // Have we intitialised lowestIndex yet?
+        boolean given = false; // Have we initialised lowestIndex yet?
         for (int i = 2; index < primes.length; i++) {
             if (p[i]) {
                 primes[index++] = i;
