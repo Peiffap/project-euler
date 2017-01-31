@@ -2,7 +2,7 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 
 /**
- * Library with some useful subroutines for project Euler solving.
+ * Library with some useful subroutines for project Euler problem solving.
  */
 
 public class Library {
@@ -14,10 +14,13 @@ public class Library {
      */
     public static boolean[] primeTab(int length) {
         boolean[] isPrime = new boolean[length+1];
-        for (int i = 2; i < isPrime.length; i++) {
-            isPrime[i] = true; // Assume all primes.
+        if (length >= 2) {
+            isPrime[2] = true;
         }
-        for (int i = 2; i*i <= length; i++) {
+        for (int i = 3; i < isPrime.length; i+=2) {
+            isPrime[i] = true; // Assume all odd numbers are primes.
+        }
+        for (int i = 3; i*i <= length; i++) {
             if (isPrime[i]) {
                 for (int j = i; j <= length/i; j++) {
                     isPrime[j*i] = false; // "Cross" out any multiples of previously found primes.
