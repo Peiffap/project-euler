@@ -27,20 +27,9 @@ public class p037 {
      * @param n the integer to truncate.
      * @return the truncated integer.
      */
-    public static int truncL(int n) {
+    public static int truncateLeft(int n) {
         String s = Integer.toString(n);
         String str = s.substring(1,s.length());
-        return Integer.parseInt(str);
-    }
-
-    /**
-     * Returns an integer that is the input integer without its last digit.
-     * @param n the integer to truncate.
-     * @return the truncated integer.
-     */
-    public static int truncR(int n) {
-        String s = Integer.toString(n);
-        String str = s.substring(0, s.length()-1);
         return Integer.parseInt(str);
     }
 
@@ -52,13 +41,13 @@ public class p037 {
     public static boolean isTruncatable(int n) {
         int dummy = n;
         while (Library.isPrime(n) && n > 9) {
-            n = truncL(n);
+            n = truncateLeft(n);
         }
         if (n > 9 || !Library.isPrime(n) || n < 2)
             return false;
         n = dummy;
         while (Library.isPrime(n) && n > 9) {
-            n = truncR(n);
+            n = Library.truncateRight(n);
         }
         if (n > 9 || !Library.isPrime(n) || n < 2)
             return false;

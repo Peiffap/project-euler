@@ -132,7 +132,21 @@ public class Library {
     public static int digitSum(BigDecimal b) {
         String s = b.toPlainString();
         int sum = Character.getNumericValue(s.charAt(0));
-        for (int i = 2; i < 101; i++) {
+        for (int i = 2; i < s.length(); i++) {
+            sum += Character.getNumericValue(s.charAt(i));
+        }
+        return sum;
+    }
+
+    /**
+     * Computes the sum of the digits of a given integer.
+     * @param b the integer whose digits we want to sum.
+     * @return the sum of the digits of b.
+     */
+    public static int digitSum(int b) {
+        String s = Integer.toString(b);
+        int sum = 0;
+        for (int i = 0; i < s.length(); i++) {
             sum += Character.getNumericValue(s.charAt(i));
         }
         return sum;
@@ -182,5 +196,16 @@ public class Library {
             sum += s.charAt(i) - 'A' + 1;
         }
         return sum;
+    }
+
+    /**
+     * Returns an integer that is the input integer without its last digit.
+     * @param n the integer to truncate.
+     * @return the truncated integer.
+     */
+    public static int truncateRight(int n) {
+        String s = Integer.toString(n);
+        String str = s.substring(0, s.length()-1);
+        return Integer.parseInt(str);
     }
 }
