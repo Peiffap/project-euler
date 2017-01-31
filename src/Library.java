@@ -8,9 +8,10 @@ import java.math.BigInteger;
 public class Library {
 
     /**
-     * Returns a boolean array stating with each element stating whether its index is a prime number.
+     * Returns a boolean array stating with each element stating whether its index is a prime number. Uses a simple
+     * sieve of Eratosthenes that starts at crossing out all even numbers for slightly faster runtime.
      * @param length the number up to which the array goes.
-     * @return a boolean array specifying if the index is prime.
+     * @return a boolean array specifying if the index of each element is prime.
      */
     public static boolean[] primeTab(int length) {
         boolean[] isPrime = new boolean[length+1];
@@ -20,7 +21,7 @@ public class Library {
         for (int i = 3; i < isPrime.length; i+=2) {
             isPrime[i] = true; // Assume all odd numbers are primes.
         }
-        for (int i = 3; i*i <= length; i++) {
+        for (int i = 3; i*i <= length; i+=2) {
             if (isPrime[i]) {
                 for (int j = i; j <= length/i; j++) {
                     isPrime[j*i] = false; // "Cross" out any multiples of previously found primes.
