@@ -6,7 +6,7 @@
 
 import java.math.BigInteger;
 
-public class p056 {
+class p056 {
     public static void main( String[] args) {
         long st = System.nanoTime();
         int max = 0;

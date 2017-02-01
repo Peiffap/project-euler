@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p206 {
+class p206 {
 
     /**
      * Returns a string representation of the number found by only taking into account the even digits of n.

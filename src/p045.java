@@ -5,8 +5,7 @@ import java.util.Arrays;
  *
  * Validated.
  */
-
-public class p045 {
+class p045 {
     public static void main (String[] args) {
         long s = System.nanoTime();
         long[] pen = new long[35000];

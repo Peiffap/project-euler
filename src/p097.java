@@ -6,7 +6,7 @@
 
 import java.math.BigInteger;
 
-public class p097 {
+class p097 {
     public static void main(String[] args) {
         long s = System.nanoTime();
         BigInteger b = new BigInteger("2");

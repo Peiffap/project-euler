@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p041 {
+class p041 {
     /**
      * Checks whether a certain character occurs in a given string.
      * @param s the string to check.

@@ -7,7 +7,7 @@ import java.util.Iterator;
  * Library with some useful subroutines for project Euler problem solving.
  */
 
-public class Library {
+class Library {
 
     /**
      * Returns the factorial of an integer.

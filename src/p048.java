@@ -6,7 +6,7 @@
 
 import java.math.BigInteger;
 
-public class p048 {
+class p048 {
     public static void main(String[] args) {
         long s = System.nanoTime();
         BigInteger sum = BigInteger.ZERO;

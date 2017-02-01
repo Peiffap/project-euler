@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p087 {
+class p087 {
 
     private static boolean[] primes = Library.primeTab(7071);
     private static boolean[] sumOfPowers = new boolean[50000000];

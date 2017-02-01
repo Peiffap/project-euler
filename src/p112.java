@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p112 {
+class p112 {
     public static void main(String[] args) {
         long s = System.nanoTime();
         int bouc = 0;

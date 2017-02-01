@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p117 {
+class p117 {
 
     /**
      * Computes the number of ways in which a row of length n can be filled up with tiles of lengths 1, i, j and k.

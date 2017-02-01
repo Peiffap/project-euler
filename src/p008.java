@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p008 {
+class p008 {
     public static void main(String[] args) {
         long st = System.nanoTime();
         long max = 0;

@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p027 {
+class p027 {
 
     private static boolean[] primes = Library.primeTab(100000);
 

@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p069 {
+class p069 {
     public static void main (String[] args) {
         long s = System.nanoTime();
         double maxTot = 0;

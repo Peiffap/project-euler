@@ -6,7 +6,7 @@
 
 import java.math.BigInteger;
 
-public class p055 {
+class p055 {
     public static void main(String[] args) {
         long s = System.nanoTime();
         int count = 0;

@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p092 {
+class p092 {
     /**
      * Sums the squares of the digits of n.
      * @param n the number on which the calculation is being performed.

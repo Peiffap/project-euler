@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p058 {
+class p058 {
 
     /*
      * Consider n to be the absolute value of the row number.

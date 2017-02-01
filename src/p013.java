@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p013 {
+class p013 {
     /**
      * @param str the string we are trying to split.
      * @param length the length of a splitted block.

@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p023 {
+class p023 {
 
     private static boolean[] abundant = new boolean[28123];
     private static boolean[] sumOfAb = new boolean[28123];

@@ -6,7 +6,7 @@
 
 import java.math.BigInteger;
 
-public class p025 {
+class p025 {
     public static void main(String[] args) {
         long s = System.nanoTime();
         BigInteger a = BigInteger.ONE;

@@ -6,7 +6,7 @@
 
 import java.math.BigInteger;
 
-public class p016 {
+class p016 {
     public static void main(String[] args) {
         long s = System.nanoTime();
         System.out.println(Library.digitSum((BigInteger.ONE.add(BigInteger.ONE)).pow(1000)));

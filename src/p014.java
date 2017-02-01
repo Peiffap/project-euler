@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p014 {
+class p014 {
 
     private static int[] lengths = new int[1000000];
 

@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p024 {
+class p024 {
     public static void main(String[] args) {
         long s = System.nanoTime();
         int[] nums = {0,1,2,3,4,5,6,7,8,9};

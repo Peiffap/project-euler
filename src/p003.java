@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p003 {
+class p003 {
     public static void main (String[] args) {
         long s = System.nanoTime();
         double n = 600851475143.0;

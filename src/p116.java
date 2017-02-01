@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p116 {
+class p116 {
 
     /**
      * Computes the number of ways in which a mix of coloured tiles and black tiles can be laid out in a row of

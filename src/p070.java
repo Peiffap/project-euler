@@ -5,8 +5,7 @@ import java.util.Arrays;
  *
  * Validated.
  */
-
-public class p070 {
+class p070 {
     public static void main(String[] args) {
         long s = System.nanoTime();
         double minRatio = Double.POSITIVE_INFINITY;

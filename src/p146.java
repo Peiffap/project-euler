@@ -6,7 +6,7 @@
 
 import java.math.BigInteger;
 
-public class p146 {
+class p146 {
 
     /**
      * Generates primes to check for 'consecutive primality' and returns whether the generated numbers were consecutive

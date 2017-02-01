@@ -6,7 +6,7 @@
 
 import java.util.ArrayList;
 
-public class p004 {
+class p004 {
 
     public static void main(String[] args) {
         long s = System.nanoTime();

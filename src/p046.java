@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p046 {
+class p046 {
 
     private static int[] perfSquares = new int[80]; // All perfect squares up to 80^2.
     private static int[] primes = new int[800]; // All primes under 5800. 800 is the pi(x) approximation for x = 7000.

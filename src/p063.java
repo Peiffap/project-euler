@@ -6,7 +6,7 @@
 
 import java.math.BigInteger;
 
-public class p063 {
+class p063 {
 
     /**
      * Counts the amount of times for which i^l has l digits, with i ranging from 1 to 9.

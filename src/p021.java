@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p021 {
+class p021 {
     public static void main (String[] args) {
         long s = System.nanoTime();
         int sum = 0;

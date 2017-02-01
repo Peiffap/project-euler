@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p042 {
+class p042 {
 
     private static boolean[] isTriangle = new boolean[450]; // Highest possible word value for any word of length < 18.
 

@@ -5,7 +5,7 @@ import java.util.Arrays;
  *
  * Validated.
  */
-public class p044 {
+class p044 {
 
     private static long[] pen = new long[3400];
 

@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p179 {
+class p179 {
     public static void main(String[] args) {
         long s = System.nanoTime();
         int count = 0;

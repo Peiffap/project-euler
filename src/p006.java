@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p006 {
+class p006 {
     public static void main(String[] args) {
         long s = System.nanoTime();
         int squareSum = 1;

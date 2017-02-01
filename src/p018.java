@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p018 {
+class p018 {
 
     /*
      * Each element of the triangle array should represent the maximum path sum down that element. We continuously

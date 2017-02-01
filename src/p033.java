@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p033 {
+class p033 {
     /**
      * Checks if the fraction can be solved by cancelling out digits.
      * @param n the numerator.

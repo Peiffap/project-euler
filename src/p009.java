@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p009 {
+class p009 {
     public static void main(String[] args) {
         long s = System.nanoTime();
         for (int c = 1; c < 1000; c++) {

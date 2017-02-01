@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p035 {
+class p035 {
 
     /**
      * @param base the integer we want to shift the digits of.

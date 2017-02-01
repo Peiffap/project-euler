@@ -5,7 +5,7 @@ import java.math.BigInteger;
  *
  * Validated.
  */
-public class p123 {
+class p123 {
     public static void main (String[] args) {
         long s = System.nanoTime();
         boolean[] p = Library.primeTab(10000000);

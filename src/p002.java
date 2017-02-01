@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p002 {
+class p002 {
     public static void main(String[] args) {
         long s = System.nanoTime();
         int dummy = 1; // F_1

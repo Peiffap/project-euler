@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p010 {
+class p010 {
     public static void main(String[] args) {
         long s = System.nanoTime();
         boolean[] primes = Library.primeTab(2000000);

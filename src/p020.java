@@ -3,8 +3,7 @@
  *
  * Validated.
  */
-
-public class p020 {
+class p020 {
     public static void main (String[] args) {
         long s = System.nanoTime();
         System.out.println(Library.digitSum(Library.fact(100)));

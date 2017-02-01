@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p029 {
+class p029 {
     public static void main(String[] args) {
         long s = System.nanoTime();
         double[] arr = new double[10000];

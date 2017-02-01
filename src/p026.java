@@ -5,7 +5,7 @@
 
 // Solved on paper using OEIS sequence A001913 (https://oeis.org/A001913).
 
-public class p026 {
+class p026 {
     public static void main (String[] args) {
         long s = System.nanoTime();
         long e = System.nanoTime();

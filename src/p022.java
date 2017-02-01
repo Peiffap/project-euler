@@ -5,7 +5,7 @@ import java.util.Arrays;
  *
  * Validated.
  */
-public class p022 {
+class p022 {
     public static void main (String[] args) {
         long s = System.nanoTime();
         Arrays.sort(names);

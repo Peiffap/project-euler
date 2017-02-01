@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-public class p040 {
+class p040 {
     /**
      * Returns the smallest string of consecutive integers of length greater than or equal to l.
      * @param l the minimum length of the string
