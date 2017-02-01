@@ -78,7 +78,7 @@ public class Library {
      * @return true if s is a palindrome, false if not.
      */
     static boolean isPalindrome(String s) {
-        StringBuffer reverse = new StringBuffer();
+        StringBuilder reverse = new StringBuilder();
         for (int i = s.length()-1; i >-1; i--) {
             reverse.append(s.charAt(i));
         }
@@ -199,7 +199,11 @@ public class Library {
         return Integer.parseInt(str);
     }
 
-
+    /**
+     * Computes the floor of the square root of an integer.
+     * @param x the integer whose square root we are trying to find.
+     * @return the integer that is the floor of the square root of x.
+     */
     static int sqrt(int x) {
         int y = 0;
         for (int i = 32768; i != 0; i >>>= 1) {
@@ -209,11 +213,11 @@ public class Library {
         }
         return y;
     }
+
     /**
      * This class creates an infinite iterator with a very fast page-segmentation algorithm. It sieves only odd numbers
      * to improve performance. It outperforms most optimized sieves for inputs greater than 40M.
      */
-
     static class primeIterator implements Iterator<Long> {
         private final int BFSZ = 1 << 16;
         private long bi = -1;
@@ -355,11 +359,6 @@ public class Library {
      * @return true if n is a palindrome, false if not.
      */
     static boolean isPalindrome (int n) {
-        String s = n + "";
-        String rev = "";
-        for (int i = s.length()-1; i >= 0; i--) {
-            rev += s.charAt(i);
-        }
-        return rev.equals(s);
+        return isPalindrome(Integer.toString(n));
     }
 }
