@@ -9,8 +9,8 @@ public class p040 {
      * @param l the minimum length of the string
      * @return the smallest string of consecutive integers of length greater than or equal to l.
      */
-    public static String numString(int l) {
-        StringBuffer sb = new StringBuffer();
+    private static String numString(int l) {
+        StringBuilder sb = new StringBuilder();
         for (int i = 1; sb.length() < l; i++) {
             sb.append(i);
         }

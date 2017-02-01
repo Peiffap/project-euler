@@ -10,9 +10,9 @@ public class p206 {
      * @param n the number whose even digits we want to find.
      * @return a string representation of the number found by only taking into account the even digits of n.
      */
-    public static String evenDig(long n) {
+    private static String evenDig(long n) {
         String s = Long.toString(n);
-        StringBuffer ret = new StringBuffer();
+        StringBuilder ret = new StringBuilder();
         for (int i = 0; i < s.length(); i+=2) {
             ret.append(s.charAt(i));
         }

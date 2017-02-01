@@ -21,7 +21,7 @@ public class p034 {
      * @param n the number whose digits we want to sum the factorials of.
      * @return the sum of the factorials of the digits of n.
      */
-    public static int digFacSum (int n) {
+    private static int digFacSum (int n) {
         String s = Integer.toString(n);
         int sum = 0;
         for (int i = 0; i < s.length(); i++) {

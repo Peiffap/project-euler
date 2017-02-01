@@ -22,7 +22,7 @@ public class p080 {
     }
 
     /**
-     * Computes the square root of a given BigDecimal up to a given accuracy.
+     * Computes the square root of a given BigDecimal up to any accuracy.
      * @param A the BigDecimal whose square root we are computing.
      * @param SCALE the accuracy of the computation, i.e. the amount of decimal digits.
      * @return the square root of A with SCALE digits after the comma.

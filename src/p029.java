@@ -24,7 +24,7 @@ public class p029 {
      * Changes an array of doubles such as to replace every duplicate with 0.
      * @param d the array of doubles we want to transform duplicates in.
      */
-    public static void changeDup (double[] d) {
+    private static void changeDup (double[] d) {
         for (int i = 0; i < d.length; i++) {
             if (d[i] != -1) {
                 double test = d[i];
@@ -40,7 +40,7 @@ public class p029 {
      * @param d the array of doubles we want to know the true length of.
      * @return the amount on nonzero elements in d.
      */
-    public static int trueLength (double[] d) {
+    private static int trueLength (double[] d) {
         int l = 0;
         for (int i = 0; i < d.length; i++) {
             if (d[i] != 0)

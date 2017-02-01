@@ -24,7 +24,7 @@ public class p053 {
      * @param r the amount of elements to be taken from the set.
      * @return the amount of possible ways to to take r elements from a set of n elements.
      */
-    public static double comb(int n, int r) {
+    private static double comb(int n, int r) {
         if (r > n-r) {
             return (factDiv(n,r)/factDiv(n-r,0));
         }
@@ -37,7 +37,7 @@ public class p053 {
      * @param b the number whose factorial is in the denominator.
      * @return top!/bottom!
      */
-    public static double factDiv(int t, int b) {
+    private static double factDiv(int t, int b) {
         double fact = 1;
         for (int i = b+1; i <= t; i++) {
             fact *= i;

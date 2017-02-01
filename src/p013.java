@@ -9,7 +9,7 @@ public class p013 {
      * @param length the length of a splitted block.
      * @return an array containing length-character long substrings of str.
      */
-    public static String[] splitter(String str, int length) {
+    private static String[] splitter(String str, int length) {
         String[] s = new String[100];
         for (int i = 0; i < s.length; i++) {
             s[i] = str.substring(0,length);

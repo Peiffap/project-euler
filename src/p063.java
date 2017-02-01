@@ -13,7 +13,7 @@ public class p063 {
      * @param l the length of the number, also thep power to which i is raised.
      * @return the amount of times i^l has l digits for 0 < i < 10.
      */
-    public static int powGen(int l) {
+    private static int powGen(int l) {
         int count = 0;
         for (int  i = 1; i < 10; i++) {
             BigInteger d = BigInteger.valueOf(i);

@@ -14,7 +14,7 @@ public class p146 {
      * @param n the integer whose square is used to generate consecutive primes.
      * @return true if n*n allows for generation of consecutive primes, false if not.
      */
-    public static boolean primeGen (int n) {
+    private static boolean primeGen (int n) {
         BigInteger b = new BigInteger(Integer.toString(n));
         b = b.pow(2);
         return consec(b);

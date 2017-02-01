@@ -9,7 +9,7 @@ public class p092 {
      * @param n the number on which the calculation is being performed.
      * @return the sum of the squares of the digits of n.
      */
-    public static int digPowSum (int n) {
+    private static int digPowSum (int n) {
         int sum = 0;
         String s = Integer.toString(n);
         for (int i = 0; i < s.length(); i++) {
@@ -24,7 +24,7 @@ public class p092 {
      * @param n the number to check.
      * @return true if it arrives at 89, false if it arrives at 1.
      */
-    public static boolean arrives89 (int n) {
+    private static boolean arrives89 (int n) {
         while (n != 1 && n!= 89) {
             n = digPowSum(n);
         }

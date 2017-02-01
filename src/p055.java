@@ -24,7 +24,7 @@ public class p055 {
      * @param n the number to evaluate.
      * @return true if n is a Lychrel number, false if not.
      */
-    public static boolean isLychrel(long n) {
+    private static boolean isLychrel(long n) {
         int iter = 0;
         String s = n + "";
         BigInteger b = new BigInteger(s);
@@ -42,7 +42,7 @@ public class p055 {
      * @param n the BigInteger to reverse.
      * @return the string representation of the reversed number.
      */
-    public static String reverse(BigInteger n) {
+    private static String reverse(BigInteger n) {
         String s = n.toString();
         StringBuffer reverse = new StringBuffer();
         for (int i = s.length()-1; i >-1; i--) {

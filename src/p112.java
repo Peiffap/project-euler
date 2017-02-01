@@ -24,7 +24,7 @@ public class p112 {
      * @param n the number to check.
      * @return true if n is increasing, false if not.
      */
-    public static boolean isInc (int n) {
+    private static boolean isInc (int n) {
         String str = Integer.toString(n);
         for (int i = 0; i < str.length() -1; i++) {
             int b = Character.getNumericValue(str.charAt(i));
@@ -40,7 +40,7 @@ public class p112 {
      * @param n the number to check.
      * @return true if n is decreasing, false if not.
      */
-    public static boolean isDec (int n) {
+    private static boolean isDec (int n) {
         String str = Integer.toString(n);
         for (int i = 1; i < str.length(); i++) {
             int b = Character.getNumericValue(str.charAt(i));
@@ -56,7 +56,7 @@ public class p112 {
      * @param n the number to check.
      * @return true if n is bouncy, false if not.
      */
-    public static boolean isBou (int n) {
+    private static boolean isBou (int n) {
             return !isDec(n) && !isInc(n);
     }
 }

@@ -13,7 +13,7 @@ public class p027 {
      * @return the longest chain of primes one can construct by applying the above formula for a given a and b,
      * starting at n = 0.
      */
-    public static int consec (int a, int b) {
+    private static int consec (int a, int b) {
         int n = 0;
         while (primes[Math.abs(n*n + a*n + b)]) {
             n++;

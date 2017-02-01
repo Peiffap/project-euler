@@ -24,9 +24,9 @@ public class p145 {
      * @param n the input integer.
      * @return the string that has the input integer's digits in reverse order.
      */
-    public static String reversedNum (int n) {
+    private static String reversedNum (int n) {
         String s = Integer.toString(n);
-        StringBuffer r = new StringBuffer();
+        StringBuilder r = new StringBuilder();
         for (int i = s.length() -1; i > -1; i--) {
             r.append(s.charAt(i));
         }
@@ -39,7 +39,7 @@ public class p145 {
      * @param s the string representation of the number.
      * @return true if all the digits are odd, false if not.
      */
-    public static boolean onlyOdd(String s) {
+    private static boolean onlyOdd(String s) {
         for (int i = 0; i < s.length(); i++) {
             int d = Character.getNumericValue(s.charAt(i));
             if (d%2 == 0)

@@ -10,7 +10,7 @@ public class p041 {
      * @param c the character to search for.
      * @return true if s contains c, false if not.
      */
-    public static boolean contains (String s, char c) {
+    private static boolean contains (String s, char c) {
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == c)
                 return true;

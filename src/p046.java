@@ -29,7 +29,7 @@ public class p046 {
             }
         }
         for (int i = 33; i < goldbach.length; i++) {
-            if (goldbach[i] == false) { // Searches for first number that does not verify the conjecture.
+            if (!goldbach[i]) { // Searches for first number that does not verify the conjecture.
                 System.out.println(i);
                 long e = System.nanoTime();
                 System.out.println((e-s)/1000000000.0);
@@ -41,7 +41,7 @@ public class p046 {
     /**
      * Fills the perfSquares array with all perfect squares up to its hardcoded length.
      */
-    public static void fill() {
+    private static void fill() {
         for (int i = 1; i < perfSquares.length; i++) { // Fills the perfect squares.
             perfSquares[i] = i*i;
         }

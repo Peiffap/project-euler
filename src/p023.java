@@ -14,7 +14,7 @@ public class p023 {
      * @param n the number to check.
      * @return true if n is abundant, false if not.
      */
-    public static boolean isAbundant(int n) {
+    private static boolean isAbundant(int n) {
         return Library.divisorSum(n) > n;
     }
 

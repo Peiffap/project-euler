@@ -20,7 +20,7 @@ public class p024 {
      * @param array an array representation of a number.
      * @return true if there was a next permutation of array, false if not.
      */
-    public static boolean nextPermutation(int[] array) {
+    private static boolean nextPermutation(int[] array) {
         int i = array.length - 1;
         while (i > 0 && array[i - 1] >= array[i])
             i--;

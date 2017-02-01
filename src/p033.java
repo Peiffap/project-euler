@@ -10,7 +10,7 @@ public class p033 {
      * @param d the denominator.
      * @return true if it can be solved this way, false if not.
      */
-    public static boolean cancelDigits(int n, int d) {
+    private static boolean cancelDigits(int n, int d) {
         String str1 = n + "";
         int s1 = Character.getNumericValue(str1.charAt(0));
         int s2 = Character.getNumericValue(str1.charAt(1));

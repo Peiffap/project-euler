@@ -22,7 +22,7 @@ public class p030 {
      * @param n the integer whose digits we want to raise to the 5th power.
      * @return the sum of the fifth powers of the digits of n.
      */
-    public static int digPow (int n) {
+    private static int digPow (int n) {
         int sum = 0;
         String s = Integer.toString(n);
         for (int i = 0; i < s.length(); i++) {

@@ -11,7 +11,7 @@ public class p014 {
      * @param in the integer we want to find the Collatz sequence length of.
      * @return the length of this integer's Collatz sequence.
      */
-    public static int coll (int in) {
+    private static int coll (int in) {
         double n = in;
         int length = 1;
         while (n != 1) {
