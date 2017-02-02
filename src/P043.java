@@ -10,6 +10,7 @@ class P043 {
     private static int[] digits = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
     public static void main(String[] args) {
+        long s = System.nanoTime();
         perms[0] = 123456789L;
         long sum = 0;
         for (int i = 1; i < perms.length; i++) {
@@ -22,6 +23,7 @@ class P043 {
             }
         }
         System.out.println(sum);
+        System.out.println((System.nanoTime() - s)/1000000000.0);
     }
 
     /**
