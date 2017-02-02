@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /**
  * https://projecteuler.net/problem=32
  *
@@ -7,35 +5,40 @@ import java.util.Arrays;
  */
 class p032 {
 
-    private static int[] digits = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-    private static int[] perms = new int[Library.fact(10).intValue()]; // All 10! permutations of 123456789.
+    private static final char[] digits = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
+
+
+    /**
+     * @param s the string to examine for pandigitality.
+     * @return true if s contains all characters 1 through 9, false if not.
+     */
+    private static boolean isPandigital(String s) {
+        boolean allContained = s.length() == digits.length;
+        for (int i = 0; i < digits.length && allContained; i++) {
+            allContained = Library.contains(s, digits[i]);
+        }
+        return allContained;
+    }
+
 
     public static void main(String[] args) {
+        boolean[] found = new boolean[10000]; // If i*j is any bigger then the concatenation has more than 9 digits.
         long sta = System.nanoTime();
-        perms[0] = 123456789;
-        boolean[] permsFound = new boolean[10000];
-        for (int i = 1; i < perms.length; i++) {
-            Library.nextPermutation(digits);
-            perms[i] = Library.toInteger(digits);
-        }
-        long sum = 0;
-        for (int i = 3; i < 50; i++) {
+        int sum = 0;
+        int limit;
+        String st;
+        for (int i = 1; i < 100; i++) { // i can't be >100, or else 1001010100 is the shortest possible string.
             String s = Integer.toString(i);
-            int limit = 2000;
-            if (i > 5) {
-                limit = 10000/i;
-            }
-            for (int j = i+100; j < limit; j++) {
-                String st = s + j + i*j;
-                if (st.length() < 10) {
-                    int search = Integer.parseInt(st);
-                    if (Arrays.binarySearch(perms, search) > 0 && !permsFound[i*j]) { // Hasn't been found yet.
-                        sum += i * j;
-                        permsFound[i*j] = true; // Has been found.
-                    }
-                } else {
-                    i++;
-                    j = i+1;
+            limit = 10000/i;
+            /*
+             * j has to be bigger than i, because if j < i then the combination has been tried out before, and if
+             * j = i, then the concatenated string will contain the digits of i twice.
+             */
+            for (int j = i+1; j  < limit; j++) {
+                st = s.concat(Integer.toString(j).concat(Integer.toString(i*j)));
+                if (!found[i*j] && isPandigital(st)) { // Is pandigital and hasn't been found yet.
+                    sum += i*j;
+                    found[i*j] = true; // Has been found now.
                 }
             }
         }
