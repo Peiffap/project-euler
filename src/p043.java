@@ -3,7 +3,7 @@
  *
  * Validated.
  */
-class P043 {
+class p043 {
 
     private static final int[] primes = {2, 3, 5, 7, 11, 13, 17};
     private static long[] perms = new long[Library.fact(11).intValue()];
