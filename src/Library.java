@@ -361,4 +361,107 @@ class Library {
     static boolean isPalindrome (int n) {
         return isPalindrome(Integer.toString(n));
     }
+
+    /**
+     * Returns the greatest common divisor between two numbers.
+     * @param a the first number.
+     * @param b the second number.
+     * @return the integer that is the greatest common divisor between a and b.
+     */
+    static int gcd(int a, int b) {
+    /*
+     * The reason we require both arguments to be >= 0 is because otherwise, what do you return on
+     * gcd(0, Integer.MIN_VALUE)? BigInteger.gcd would return positive 2^31, but positive 2^31 isn't
+     * an int.
+     */
+        if (a == 0) {
+            // 0 % b == 0, so b divides a, but the converse doesn't hold.
+            return b;
+        } else if (b == 0) {
+            return a; // Similar logic.
+        }
+    /*
+     * Uses the binary GCD algorithm; see http://en.wikipedia.org/wiki/Binary_GCD_algorithm. This is
+     * >40% faster than the Euclidean algorithm in benchmarks.
+     */
+        int aTwos = Integer.numberOfTrailingZeros(a);
+        a >>= aTwos; // Divide out all 2s.
+        int bTwos = Integer.numberOfTrailingZeros(b);
+        b >>= bTwos; // Divide out all 2s.
+        while (a != b) { // both a, b are odd
+            // The key to the binary GCD algorithm is as follows:
+            // Both a and b are odd. Assume a > b; then gcd(a - b, b) = gcd(a, b).
+            // But in gcd(a - b, b), a - b is even and b is odd, so we can divide out powers of two.
+
+            // We bend over backwards to avoid branching, adapting a technique from
+            // http://graphics.stanford.edu/~seander/bithacks.html#IntegerMinOrMax
+
+            int delta = a - b; // Can't overflow, since a and b are nonnegative.
+
+            int minDeltaOrZero = delta & (delta >> (Integer.SIZE - 1));
+            // Equivalent to Math.min(delta, 0).
+
+            a = delta - minDeltaOrZero - minDeltaOrZero; // Sets a to Math.abs(a - b).
+            // A is now nonnegative and even.
+
+            b += minDeltaOrZero; // Sets b to min(old a, b).
+            a >>= Integer.numberOfTrailingZeros(a); // Divide out all 2s, since 2 doesn't divide b.
+        }
+        return a << Math.min(aTwos, bTwos);
+    }
+
+    /**
+     * @param str the string to examine.
+     * @param c the character that we're looking for.
+     * @return true if str contains c, false if not.
+     */
+    static boolean contains (String str, char c) {
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == c) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Changes the input array (which represents a number n) such as to make it represent the next permutation of n.
+     * @param array an array representation of a number.
+     * @return true if there was a next permutation of array, false if not.
+     */
+    static boolean nextPermutation(int[] array) {
+        int i = array.length - 1;
+        while (i > 0 && array[i - 1] >= array[i])
+            i--;
+        if (i <= 0)
+            return false;
+        int j = array.length - 1;
+        while (array[j] <= array[i - 1])
+            j--;
+        int temp = array[i - 1];
+        array[i - 1] = array[j];
+        array[j] = temp;
+        j = array.length - 1;
+        while (i < j) {
+            temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+            i++;
+            j--;
+        }
+        return true;
+    }
+
+    /**
+     * Converts an array of digits to an integer.
+     * @param arr the array containing the digits.
+     * @return an integer that is the concatenation of the digits in arr.
+     */
+    static int toInteger(int[] arr) {
+        StringBuilder sb = new StringBuilder();
+        for (int i : arr) {
+            sb.append(i);
+        }
+        return Integer.parseInt(sb.toString());
+    }
 }
