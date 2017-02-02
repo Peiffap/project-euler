@@ -19,9 +19,13 @@ class p032 {
             perms[i] = Library.toInteger(digits);
         }
         long sum = 0;
-        for (int i = 1; i < 50; i++) {
+        for (int i = 3; i < 50; i++) {
             String s = Integer.toString(i);
-            for (int j = i+1; j < 2000; j++) {
+            int limit = 2000;
+            if (i > 5) {
+                limit = 10000/i;
+            }
+            for (int j = i+100; j < limit; j++) {
                 String st = s + j + i*j;
                 if (st.length() < 10) {
                     int search = Integer.parseInt(st);
@@ -29,6 +33,9 @@ class p032 {
                         sum += i * j;
                         permsFound[i*j] = true; // Has been found.
                     }
+                } else {
+                    i++;
+                    j = i+1;
                 }
             }
         }
