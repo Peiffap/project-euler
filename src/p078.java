@@ -1,5 +1,7 @@
 /**
- * Created by admin on 02/02/17.
+ * https://projecteuler.net/problem=78
+ *
+ * Validated.
  */
 class p078 {
 
