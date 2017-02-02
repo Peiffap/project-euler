@@ -5,7 +5,7 @@
  */
 class p032 {
 
-    private static final char[] digits = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
+    private static final char[] DIGITS = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
 
 
     /**
@@ -13,9 +13,9 @@ class p032 {
      * @return true if s contains all characters 1 through 9, false if not.
      */
     private static boolean isPandigital(String s) {
-        boolean allContained = s.length() == digits.length;
-        for (int i = 0; i < digits.length && allContained; i++) {
-            allContained = Library.contains(s, digits[i]);
+        boolean allContained = s.length() == DIGITS.length;
+        for (int i = 0; i < DIGITS.length && allContained; i++) {
+            allContained = Library.contains(s, DIGITS[i]);
         }
         return allContained;
     }

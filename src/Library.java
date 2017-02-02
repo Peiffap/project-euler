@@ -490,4 +490,19 @@ class Library {
         }
         return sb.toString();
     }
+
+    /**
+     * Calculates N choose K.
+     * @param n the number of elements.
+     * @param k the number of sets.
+     * @return N choose K.
+     */
+    static BigInteger binomialCoefficient(int n, int k) {
+        if (k>n-k)
+            k=n-k;
+        BigInteger b = BigInteger.ONE;
+        for (int i = 1, m = n; i <= k; i++, m--)
+            b = b.multiply(BigInteger.valueOf(m)).divide(BigInteger.valueOf(i));
+        return b;
+    }
 }

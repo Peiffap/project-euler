@@ -5,7 +5,7 @@
  */
 class p043 {
 
-    private static final int[] primes = {2, 3, 5, 7, 11, 13, 17};
+    private static final int[] PRIMES = {2, 3, 5, 7, 11, 13, 17};
     private static long[] perms = new long[Library.fact(11).intValue()];
     private static int[] digits = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
@@ -36,12 +36,12 @@ class p043 {
         boolean hasProperty = true;
         if (s.length() == 9) { // Leading zero.
             for (int i = 0; i < 7  && hasProperty; i++) {
-                hasProperty = Long.parseLong(s.substring(i, i+3))%primes[i] == 0;
+                hasProperty = Long.parseLong(s.substring(i, i+3))%PRIMES[i] == 0;
             }
             return hasProperty;
         }
         for (int i = 1; i < 8  && hasProperty; i++) { // No leading zero.
-            hasProperty = Long.parseLong(s.substring(i, i+3))%primes[i-1] == 0;
+            hasProperty = Long.parseLong(s.substring(i, i+3))%PRIMES[i-1] == 0;
         }
         return hasProperty;
     }

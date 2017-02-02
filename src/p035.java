@@ -11,7 +11,7 @@ class p035 {
      */
     private static int shift (int base) {
         String s = Integer.toString(base);
-        StringBuffer shifted = new StringBuffer();
+        StringBuilder shifted = new StringBuilder();
         for (int i = 1; i < s.length(); i++) {
             shifted.append(s.charAt(i));
         }
