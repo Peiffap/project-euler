@@ -464,4 +464,30 @@ class Library {
         }
         return Integer.parseInt(sb.toString());
     }
+
+    /**
+     * Converts an array of digits to a long.
+     * @param arr the array containing the digits.
+     * @return a long that is the concatenation of the digits in arr.
+     */
+    static long toLong(int[] arr) {
+        StringBuilder sb = new StringBuilder();
+        for (int i : arr) {
+            sb.append(i);
+        }
+        return Long.parseLong(sb.toString());
+    }
+
+    /**
+     * Converts an array of digits to a string.
+     * @param arr the array containing the digits.
+     * @return a string that is the concatenation of the digits in arr.
+     */
+    static String concatString(int[] arr) {
+        StringBuilder sb = new StringBuilder();
+        for (int i : arr) {
+            sb.append(i);
+        }
+        return sb.toString();
+    }
 }
