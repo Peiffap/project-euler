@@ -1,7 +1,6 @@
-import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.math.*;
 
 /**
  * Library with some useful subroutines for project Euler problem solving.
@@ -388,7 +387,7 @@ class Library {
         a >>= aTwos; // Divide out all 2s.
         int bTwos = Integer.numberOfTrailingZeros(b);
         b >>= bTwos; // Divide out all 2s.
-        while (a != b) { // both a, b are odd
+        while (a != b) { // Both a, b are odd.
             // The key to the binary GCD algorithm is as follows:
             // Both a and b are odd. Assume a > b; then gcd(a - b, b) = gcd(a, b).
             // But in gcd(a - b, b), a - b is even and b is odd, so we can divide out powers of two.
@@ -504,5 +503,26 @@ class Library {
         for (int i = 1, m = n; i <= k; i++, m--)
             b = b.multiply(BigInteger.valueOf(m)).divide(BigInteger.valueOf(i));
         return b;
+    }
+
+    /**
+     * Calculates the subfactorial of n, sometimes written !n.
+     * @param num the number we're calculating the subfactorial of.
+     * @return !num.
+     */
+    static BigInteger subfact(int num) {
+        if (num == 0) {
+            return BigInteger.ONE;
+        }
+
+        BigDecimal sum = BigDecimal.ZERO;
+        for (int i = 0; i <= num; i++) {
+            BigDecimal fact = new BigDecimal(fact(i));
+            BigDecimal toAdd = BigDecimal.valueOf(Math.pow(-1, i)).divide(fact, MathContext.DECIMAL128);
+            sum = sum.add(toAdd);
+        }
+
+        BigDecimal answer = new BigDecimal(fact(num)).multiply(sum, MathContext.DECIMAL128);
+        return answer.toBigInteger();
     }
 }
