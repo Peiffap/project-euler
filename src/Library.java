@@ -762,4 +762,28 @@ class Library {
             return true; // Definitely prime.
         }
     }
+
+    /**
+     * Computes the divisors of n (that aren't 1 or n) and returns them in an array.
+     *
+     * @param n the integer of which we are trying to find the divisors.
+     * @return the divisors this number has (other than 1 and n) stored in an array.
+     */
+    static int[] divisors(int n) {
+        ArrayList<Integer> divs = new ArrayList<>();
+        int limit = sqrt(n)+1;
+        for (int i = 2; i <= limit; i++) {
+            if (n % i == 0 && i != limit) {
+                divs.add(i);
+                divs.add(n/i);
+            } else if (n % i == 0) {
+                divs.add(i);
+            }
+        }
+        int[] divisors = new int[divs.size()];
+        for (int i = 0; i < divs.size(); i++) {
+            divisors[i] = divs.get(i);
+        }
+        return divisors;
+    }
 }
