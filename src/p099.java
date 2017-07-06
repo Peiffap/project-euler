@@ -12,8 +12,6 @@ class p099 {
         int maxi = 0;
         BigInteger maxb = BigInteger.TEN;
         for (int i = 0; i < DATA.length; i++) {
-            System.out.println(i);
-            System.out.println(maxi);
             BigInteger b = new BigInteger(Integer.toString(DATA[i][0]));
             b = b.pow(DATA[i][1]);
             if (b.compareTo(maxb) > 0) {

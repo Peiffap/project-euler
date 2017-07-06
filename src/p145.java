@@ -11,8 +11,6 @@ class p145 {
             String str = reversedNum(i);
             if (onlyOdd(str) && i%10 != 0)
                 count++;
-            if (i%1000000 == 0)
-                System.out.println(i);
         }
         System.out.println(count);
         long e = System.nanoTime();

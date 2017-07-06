@@ -786,4 +786,20 @@ class Library {
         }
         return divisors;
     }
+
+
+    /**
+     * Converts an integer to an array containing each of its digits.
+     *
+     * @param n the integer to convert.
+     * @return the digits of this integer in an array.
+     */
+    static int[] integerToArray(int n) {
+        String s = Integer.toString(n);
+        int[] digits = new int[s.length()];
+        for (int i = 0; i < s.length(); i++) {
+            digits[i] = Character.getNumericValue(s.charAt(i));
+        }
+        return digits;
+    }
 }
