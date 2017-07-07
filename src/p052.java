@@ -7,6 +7,12 @@ import java.util.Arrays;
  */
 class p052 {
 
+    /**
+     * Determines whether a certain multiple of an integer n is also a permutation of that integer.
+     * @param n the first number.
+     * @param m the second number.
+     * @return true if m*n has the same digits as n, false if not.
+     */
     private static boolean sameDigits(int n, int m) {
         String s = Integer.toString(n);
         String sr = Integer.toString(m*n);

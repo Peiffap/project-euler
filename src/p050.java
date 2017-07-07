@@ -25,8 +25,8 @@ class p050 {
     /**
      * Computes the sum of a certain subset of consecutive integers in a array.
      * @param arr the array.
-     * @param start the index of the first element
-     * @param end the index of the last element
+     * @param start the index of the first element.
+     * @param end the index of the last element.
      * @return the sum of the elements in arr, from arr[start] till arr[end].
      */
     private static int arrayConsecSum(int[] arr, int start, int end) {

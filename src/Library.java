@@ -444,6 +444,20 @@ class Library {
     }
 
     /**
+     * @param arr the arr to examine.
+     * @param n the integer that we're looking for.
+     * @return true if arr contains n, false if not.
+     */
+    static boolean contains(int[] arr, int n) {
+        for (int i : arr) {
+            if (i == n) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
      * Changes the input array (which represents a number n) such as to make it represent the next permutation of n.
      *
      * @param array an array representation of a number.
