@@ -816,4 +816,18 @@ class Library {
         }
         return digits;
     }
+
+    /**
+     * Converts an array of digits to an integer.
+     *
+     * @param arr the array to convert.
+     * @return the integer containing the digits in the array.
+     */
+    static int arrayToInteger(int[] arr) {
+        StringBuilder s = new StringBuilder();
+        for (int i : arr) {
+            s.append(i);
+        }
+        return Integer.parseInt(s.toString());
+    }
 }
