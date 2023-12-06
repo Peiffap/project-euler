@@ -51,6 +51,32 @@ class Library {
     }
 
     /**
+     * Allows for easy viewing of the BigIntegers in an array by printing each of its elements to standard output.
+     *
+     * @param arr the array we want to view.
+     */
+    static void showVect(BigInteger[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+            if (i == arr.length - 1)
+                System.out.println();
+        }
+    }
+
+    /**
+     * Allows for easy viewing of the booleans in an array by printing each of its elements to standard output.
+     *
+     * @param arr the array we want to view.
+     */
+    static void showVect(boolean[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+            if (i == arr.length - 1)
+                System.out.println();
+        }
+    }
+
+    /**
      * Checks an integer for primality by performing a wheel factorization of circumference 6.
      *
      * @param n the integer to check for primality.
