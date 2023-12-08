@@ -1,3 +1,2 @@
-# Project Euler Solutions
+# project-euler
 Solutions to some of the problems at https://projecteuler.net.
-All the solutions are written in Java.
