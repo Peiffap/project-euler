@@ -5,16 +5,16 @@ import numpy as np
 
 start = time.time()
 
-i = 120 # largest known value in statement
-INVSQRT = 1. / np.sqrt(2) # 
-lasti = 21 # previous value
+i = 120  # largest known value in statement
+INVSQRT = 1.0 / np.sqrt(2)  #
+lasti = 21  # previous value
 
 while True:
     # in order for n / i * (n - 1) / (i - 1) = 1/2, we need (n - 1) / (i - 1) < 1 / sqrt(2) < n / i
     n = int(INVSQRT * i) + 1
-    if 2 * n * (n - 1) == i * (i - 1): # if we've found a valid solution
-        #print(i, n)
-        if i > 1000000000000: # print and end if it is sufficiently big
+    if 2 * n * (n - 1) == i * (i - 1):  # if we've found a valid solution
+        # print(i, n)
+        if i > 1000000000000:  # print and end if it is sufficiently big
             print(n)
             end = time.time()
             print(end - start)

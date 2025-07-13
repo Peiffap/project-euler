@@ -10,16 +10,16 @@ start = time.time()
 # generate list of primes up to n
 def primes(n):
     p = []
-    l = [True] * n  # is i prime?
-    l[0] = False
-    l[1] = False
+    li = [True] * n  # is i prime?
+    li[0] = False
+    li[1] = False
     i = 2
     while i < n:  # while we aren't at n
-        if l[i]:  # if i hasn't been crossed off, it is prime
+        if li[i]:  # if i hasn't been crossed off, it is prime
             p.append(i)
             j = 2
             while i * j < n:
-                l[i * j] = False  # multiples of i aren't prime
+                li[i * j] = False  # multiples of i aren't prime
                 j += 1
         i += 1
     return p

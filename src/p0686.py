@@ -17,13 +17,13 @@ l124 = np.emath.log2(decimal.Decimal(1.24))
 
 n = decimal.Decimal(0)
 
-l2 = np.emath.log10(decimal.Decimal(2)) # log10(2^{n+1}) = log10(2) + log10(2^n)
+l2 = np.emath.log10(decimal.Decimal(2))  # log10(2^{n+1}) = log10(2) + log10(2^n)
 i = 0
 
 while count < 678910:
     n += l2
     i += 1
-    if l123 <= n % 1 < l124: # if we are between logs, the number has the form 123...
+    if l123 <= n % 1 < l124:  # if we are between logs, the number has the form 123...
         count += 1
         n %= 1
 

@@ -9,13 +9,13 @@ start = time.time()
 # checks whether n is a palindrome
 def is_palindrome(n):
     return str(n) == str(n)[::-1]
-    
+
 
 # checks whether n is prime
 def is_prime(n):
     if n < 2:
         return False
-    if n % 2 == 0:           
+    if n % 2 == 0:
         return n == 2  # return False
     k = 3
     while k * k <= n:
@@ -23,7 +23,7 @@ def is_prime(n):
             return False
         k += 2
     return True
-    
+
 
 s = 0  # sum of reversible prime squares
 p = 13  # current number being checked, manually check everything smaller fails.
@@ -35,9 +35,9 @@ while cnt < 50:  # we only want the first 50 reversible prime squares
     # it's the square of a prime (and 2 and 5 don't work), so it ends in 1 or 9.
     # similarly, r^2 is the square of a prime too, so n^2 starts with 1 or 9 too.
     # this means n must start with 1 or 3.
-    if str(p)[0] == '2':
+    if str(p)[0] == "2":
         p = 3 * 10 ** (len(str(p)) - 1) + 1
-    elif str(p)[0] == '4':
+    elif str(p)[0] == "4":
         p = 1 * 10 ** (len(str(p))) + 1
     if is_prime(p):
         pp = p**2  # compute the prime square

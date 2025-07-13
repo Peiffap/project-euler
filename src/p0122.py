@@ -11,23 +11,35 @@ start = time.time()
 
 s = 0
 for k in range(1, 201):  # loop over the values of k we need to find
-    o = bin(k).count('1')
-    l = int(math.log2(k) + math.log2(o) - 2.13)  # bound for the minimal length of the addition chain
+    o = bin(k).count("1")
+    ml = int(
+        math.log2(k) + math.log2(o) - 2.13
+    )  # bound for the minimal length of the addition chain
     found = False  # no addition chain of length l has been found yet
-    while not found:  # loop until an addition chain of length l is found, using iterative deepening
+    while (
+        not found
+    ):  # loop until an addition chain of length l is found, using iterative deepening
         q = [(1,)]
         while q:  # depth-first search using a stack
             el = q.pop()
-            if el[-1] == k:  # if the last element of the chain is k, we have found a chain
-                s += len(el) - 1  # first step of the chain does not count (no multiplication to find n)
-                #print(i, len(el) - 1, el, s)
+            if (
+                el[-1] == k
+            ):  # if the last element of the chain is k, we have found a chain
+                s += (
+                    len(el) - 1
+                )  # first step of the chain does not count (no multiplication to find n)
+                # print(i, len(el) - 1, el, s)
                 found = True  # no more need to iteratively deepen
                 break
-            if len(el) < l:  # only continue if the chain is not too long
-                for known in el:  # construct the next elements of the chain using the Brauer property 
-                    if el[-1] + known <= k:  # no need to build chains that reach above the target
+            if len(el) < ml:  # only continue if the chain is not too long
+                for known in (
+                    el
+                ):  # construct the next elements of the chain using the Brauer property
+                    if (
+                        el[-1] + known <= k
+                    ):  # no need to build chains that reach above the target
                         q.append(el + (el[-1] + known,))
-        l += 1  # update the depth bound
+        ml += 1  # update the depth bound
 
 print(s)  # print the sum
 

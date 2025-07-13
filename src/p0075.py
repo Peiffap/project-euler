@@ -7,19 +7,21 @@ start = time.time()
 # integer sided right angle triangle -> a, b, c solution to a^2 + b^2 = c^2
 limit = 1500000
 L = [set()]
-for i in range(limit): # use sets to avoid double-counting
+for i in range(limit):  # use sets to avoid double-counting
     L.append(set())
 
 # Euclid's modified method for generating Pythagorean triples:
 # 1. pick two integers m > n > 0, and a third multiplier k > 0
 # 2. (a, b, c) = (k (m^2 - n^2), 2kmn, k (m^2 + n^2)) generates all possible Pythagorean triples
 m = 2
-while 2 * m * m < limit: # independently of k or n, this can never lead to a + b + c <= limit
-    #print(m)
+while (
+    2 * m * m < limit
+):  # independently of k or n, this can never lead to a + b + c <= limit
+    # print(m)
     n = 1
     while n < m:
         k = 1
-        while 2 * k * m * (m + n) <= limit: # sum of three sides
+        while 2 * k * m * (m + n) <= limit:  # sum of three sides
             a = k * (m * m - n * n)
             b = k * 2 * m * n
             c = k * (m * m + n * n)

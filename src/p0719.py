@@ -14,7 +14,9 @@ def apply_split(n, split):
 
 # try to split the number
 def try_split(n):
-    q = [((), 1)]  # queue of splits to try; element is a tuple of split and current index
+    q = [
+        ((), 1)
+    ]  # queue of splits to try; element is a tuple of split and current index
     while q:
         el = q[0]
         q = q[1:]
@@ -24,7 +26,9 @@ def try_split(n):
         # only continue if the sum is bigger than needed (splitting can only decrease the sum)
         # and the index of the next split position is valid
         if su**2 > n and el[1] < len(str(n)):
-            q.append((el[0] + (el[1],), el[1] + 1))  # first possibility, using the new split
+            q.append(
+                (el[0] + (el[1],), el[1] + 1)
+            )  # first possibility, using the new split
             q.append((el[0], el[1] + 1))  # second possibility, not using the new split
     return False
 
@@ -32,7 +36,7 @@ def try_split(n):
 s = 0
 for i in range(4, 1000001):
     if try_split(i**2):
-        #print(i)
+        # print(i)
         s += i**2
 
 
