@@ -10,7 +10,7 @@ LIMIT = 1000000
 # D <= W <= H
 sols = 0
 M = 1
-while True:
+while sols <= LIMIT:
     print(M - 1, sols)
     H = M
     for W in range(1, H + 1):
